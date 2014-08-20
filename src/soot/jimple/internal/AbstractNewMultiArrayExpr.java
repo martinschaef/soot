@@ -60,7 +60,7 @@ public abstract class AbstractNewMultiArrayExpr implements NewMultiArrayExpr, Co
                 return false;
             
             for (ValueBox element : sizeBoxes)
-				if (element != element)
+				if (element != element)//TODO: this looks wrong
                     return false;
             return true;
         }
